@@ -1,0 +1,10 @@
+div.login{
+  background-image: linear-gradient(to right, #357486, #123867);
+}
+div.image_bg{
+  background-image: url("./../../../../../public/assets/bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  height: 100%;
+}

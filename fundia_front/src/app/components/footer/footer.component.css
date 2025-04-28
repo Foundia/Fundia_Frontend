@@ -1,0 +1,97 @@
+  /* Animation des courbes */
+  .animate-wave {
+    animation: wave-animation 8s linear infinite;
+  }
+
+  .animate-wave-delayed {
+    animation: wave-animation 10s linear infinite;
+    animation-delay: -2s; /* Décalage pour une variation */
+  }
+
+  @keyframes wave-animation {
+    0% {
+      d: path("M0 40 Q 25 30, 50 40 T 100 40 V 100 H 0 Z");
+    }
+    50% {
+      d: path("M0 50 Q 25 40, 50 50 T 100 50 V 100 H 0 Z");
+    }
+    100% {
+      d: path("M0 40 Q 25 30, 50 40 T 100 40 V 100 H 0 Z");
+    }
+  }
+
+  /* Animation des particules */
+  .animate-float {
+    animation: float 10s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  /* Fade In Up */
+  .animate-fade-in-up {
+    animation: fadeInUp 1.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Slide In Left */
+  .animate-fade-in-left {
+    animation: slideInLeft 1s ease-in-out forwards;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Slide In Right */
+  .animate-fade-in-right {
+    animation: slideInRight 1s ease-in-out forwards;
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Fade In */
+  .animate-fade-in {
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
